@@ -9,7 +9,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    sh "sbt compile test"
+                    sh "pwd; sbt compile test"
                 }
             }
         }
