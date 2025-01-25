@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh "sbt compile test"
+                script {
+                    sh "sbt compile test"
+                }
             }
         }
     }
