@@ -1,9 +1,9 @@
 pipeline {
-    agent {
-        docker {
-            image 'jsabin/sbt'
-        }
-    }
+//     agent {
+//         docker {
+//             image 'jsabin/sbt'
+//         }
+//     }
     stages {
         stage('Clone Repository') {
             steps {
