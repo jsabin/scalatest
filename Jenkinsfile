@@ -5,6 +5,11 @@ pipeline {
         }
     }
     stages {
+        stage('Clone Repository') {
+            steps {
+                git(url: 'https://github.com/jsabin/scalatest.git', branch: 'main')
+            }
+        }
         stage('build') {
             steps {
                 script {
